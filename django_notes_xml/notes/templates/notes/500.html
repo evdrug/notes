@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    500 Server Error
+{% endblock %}
+{% block head %}
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+{% block content %}
+    <div id="notfound">
+        <div class="notfound-bg"></div>
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1>500</h1>
+            </div>
+            <h2>{{ error }}</h2>
+        </div>
+    </div>
+{% endblock %}
+

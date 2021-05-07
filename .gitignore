@@ -1,0 +1,11 @@
+# IDE Related files
+.vscode/*
+.idea/
+
+# Virtual Environment files
+.venv/
+venv/
+
+
+__pycache__/
+mydatabase.db

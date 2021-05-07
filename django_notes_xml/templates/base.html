@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Title{% endblock %}</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/common.css' %}">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<div class="header">
+    <div class="wrapp-logo">
+        <a class='link-logo' href="{% url 'index' %}">
+            <div class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="">
+                <div class="logo-text">Notes</div>
+            </div>
+        </a>
+
+    </div>
+</div>
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
