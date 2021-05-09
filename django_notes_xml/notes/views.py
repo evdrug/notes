@@ -38,7 +38,7 @@ class DetailNote(View):
         except Fault as e:
             return HttpResponseBadRequest(e.faultString)
         except ConnectionRefusedError as e:
-            return HttpResponseServerError(render(request, 'notes/500.html', {'error': e}))
+            return HttpResponseServerError(render(request, 'notes/500.html', {'error': e.strerror}))
         if not note:
             return HttpResponseNotFound(render(request, 'notes/404.html'))
         return render(request, 'notes/view_notes.html', {'note': note})
