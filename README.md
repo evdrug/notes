@@ -21,13 +21,13 @@ python3 server_xml_rpc.py
 
 ### WEB-приложение (django=3.2.2)
 
-установка:
+установка :
 
 ```
 pip install -r requirements.txt
 ```
 
-запуск
+запуск :
 ```
 python3 django_notes_xml/manage.py runserver
 ```
